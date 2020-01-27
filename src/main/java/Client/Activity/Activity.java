@@ -1,6 +1,6 @@
-package client.Activity;
+package Client.Activity;
 
-import client.GUI.GUIComponent;
+import Client.GUI.GUIComponent;
 
 import java.awt.*;
 import java.util.ArrayList;

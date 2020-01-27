@@ -1,4 +1,4 @@
-package client.GUI;
+package Client.GUI;
 
 import java.awt.*;
 
