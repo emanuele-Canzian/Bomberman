@@ -33,7 +33,7 @@ public class BombermanPanel extends JPanel implements KeyListener {
     public void addPlayer(BombermanPlayer player) {
         this.players.add(player);
     }
-
+    // Hier wird die Bewegung des Spielers umgesetzt
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
         case 37: // Left

@@ -9,7 +9,7 @@ import static spark.Spark.*;
 import Server.Payload.*;
 
 public class PlayField {
-
+    //Erstelle das Spielfeld
     public static int[][] initPlayField(int vSize, int hSize) {
         int[][] playField = new int[hSize][vSize];
 
@@ -28,10 +28,7 @@ public class PlayField {
         return playField;
     }
 
-    public static void player() {
-
-    }
-
+    //Spielfeld wird an das Frontend übergeben
     public static void main(String[] args) {
         int hSize = 20;
         int vSize = 20;
@@ -41,8 +38,7 @@ public class PlayField {
         path("/api", () -> {
             get("/play-field", "application/json", (req, res) -> playfield, new JsonTransformer());
 
-            // Handle player movement
-            // See "MovePlayer.java" for payload specification
+            // Spieler Bewegung
             post("/move-player", (request, response) -> {
                 try {
                     MovePlayer move = gson.fromJson(request.body(), MovePlayer.class);

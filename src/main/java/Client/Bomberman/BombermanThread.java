@@ -12,6 +12,7 @@ public class BombermanThread extends Thread {
         this.panel = panel;
     }
 
+    //Behandelt die Frames per second
     @Override
     public synchronized void run() {
         while(true) {

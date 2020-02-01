@@ -30,7 +30,7 @@ public class Bomberman {
 
         panel = new BombermanPanel(H_SIZE, V_SIZE);
         frame.setContentPane(panel);
-
+        //Die übergeben Daten vom Backened werden von JSON wieder in ein Array umgewandelt.
         JSONArray column = Unirest.get("http://localhost:4567/api/play-field").asJson().getBody().getArray();
 
         int hBlockSize = H_SIZE / column.getJSONArray(0).length();
