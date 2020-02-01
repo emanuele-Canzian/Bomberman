@@ -11,11 +11,12 @@ public class Subject {
     public void removeObserver(Observer observer){
         observers.remove(observer);
     }
-
+    //fügt ein Observer hinzu
     public void addObserver(Observer observer){
         observers.add(observer);
         observer.setClientId(clientId);
         clientId++;
+
     }
 
     public void notifyAllObservers(){
