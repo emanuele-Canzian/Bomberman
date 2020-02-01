@@ -1,4 +1,4 @@
-package Client.Bomberman;
+package client.Bomberman;
 
 public class BombermanThread extends Thread {
 

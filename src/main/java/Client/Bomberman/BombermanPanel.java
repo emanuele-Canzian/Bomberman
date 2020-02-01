@@ -1,6 +1,6 @@
-package Client.Bomberman;
+package client.Bomberman;
 
-import Client.GUI.GUIComponent;
+import client.GUI.GUIComponent;
 
 import java.awt.*;
 import java.awt.event.KeyListener;
@@ -36,22 +36,22 @@ public class BombermanPanel extends JPanel implements KeyListener {
 
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
-            case 37: // Left
-                this.players.get(0).move(-1, 0);
-                System.out.println("redrawing? Left");
-                break;
-            case 38: // Up
-                this.players.get(0).move(0, -1);
-                System.out.println("redrawing? Up");
-                break;
-            case 39: // Right
-                this.players.get(0).move(1, 0);
-                System.out.println("redrawing? Right");
-                break;
-            case 40: // Down
-                this.players.get(0).move(0, 1);
-                System.out.println("redrawing? Down");
-                break;
+        case 37: // Left
+            this.players.get(0).move(-1, 0);
+            System.out.println("redrawing? Left");
+            break;
+        case 38: // Up
+            this.players.get(0).move(0, -1);
+            System.out.println("redrawing? Up");
+            break;
+        case 39: // Right
+            this.players.get(0).move(1, 0);
+            System.out.println("redrawing? Right");
+            break;
+        case 40: // Down
+            this.players.get(0).move(0, 1);
+            System.out.println("redrawing? Down");
+            break;
         }
         this.revalidate();
         this.repaint();

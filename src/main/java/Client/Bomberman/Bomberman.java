@@ -1,6 +1,7 @@
-package Client.Bomberman;
+package client.Bomberman;
 
 import java.awt.Color;
+
 import javax.swing.JFrame;
 
 import kong.unirest.Unirest;

@@ -1,6 +1,7 @@
-package Client.Bomberman;
+package client.Bomberman;
 
-import Client.GUI.GUIComponent;
+import client.GUI.GUIComponent;
+
 import java.awt.*;
 
 public class BombermanPlayer {
